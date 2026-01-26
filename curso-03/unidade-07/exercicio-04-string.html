@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+
+        <script>
+            var nome = 'RENATA caetano';
+            var letrasMinusculas = nome.toLowerCase();
+            var primeiraMaiuscula = letrasMinusculas.charAt(0).toUpperCase();
+            var segundaMaiuscula = letrasMinusculas.charAt(7).toUpperCase();
+
+            // console.log('toUpperCase: ' + nome.toUpperCase());
+            // console.log('toLowerCase: ' + nome.toLowerCase());
+
+            console.log(primeiraMaiuscula + letrasMinusculas.substr(1, 6) + segundaMaiuscula + 
+                        letrasMinusculas.substr(8, letrasMinusculas.length));
+            console.log(primeiraMaiuscula + letrasMinusculas.substr(1, letrasMinusculas.length).
+                        split(' ')[0]);
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
