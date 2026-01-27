@@ -20,18 +20,21 @@
                 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
             ];            
 
-            console.log('Horário atual: ' +
-                        setDoisDigitos(agora.getHours()) + ':' + 
-                        setDoisDigitos(agora.getMinutes()) + ':' +
-                        setDoisDigitos(agora.getSeconds())
+            console.log(
+                'Horário atual: ' +
+                setDoisDigitos(agora.getHours()) + ':' +
+                setDoisDigitos(agora.getMinutes()) + ':' +
+                setDoisDigitos(agora.getSeconds())
             );
-            console.log('Data de horário de nascimento: ' +
-                        aniversario.getDate() + ' de ' + 
-                        meses[aniversario.getMonth()] + ' de ' +
-                        aniversario.getFullYear() + ' às ' + 
-                        setDoisDigitos(aniversario.getHours()) + ':' +
-                        setDoisDigitos(aniversario.getMinutes()) + ':' +
-                        setDoisDigitos(aniversario.getSeconds())
+
+            console.log(
+                'Data de horário de nascimento: ' +
+                aniversario.getDate() + ' de ' + 
+                meses[aniversario.getMonth()] + ' de ' +
+                aniversario.getFullYear() + ' às ' + 
+                setDoisDigitos(aniversario.getHours()) + ':' +
+                setDoisDigitos(aniversario.getMinutes()) + ':' +
+                setDoisDigitos(aniversario.getSeconds())
             );
         </script>
     </head>
