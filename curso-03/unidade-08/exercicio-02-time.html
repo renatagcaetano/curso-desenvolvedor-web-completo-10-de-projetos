@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+
+        <script>
+            function setDoisDigitos(tempo) {
+                if (tempo < 10) {
+                    return '0' + tempo;
+                } else {
+                    return tempo;
+                }
+            }
+
+            var agora = new Date();
+            var aniversario = new Date(2000, 8, 20, 8, 0, 0);
+
+            var meses = [
+                'Janeiro', 'Fevereiro', 'Março', 'Abril',
+                'Maio', 'Junho', 'Julho', 'Agosto',
+                'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+            ];            
+
+            console.log('Horário atual: ' +
+                        setDoisDigitos(agora.getHours()) + ':' + 
+                        setDoisDigitos(agora.getMinutes()) + ':' +
+                        setDoisDigitos(agora.getSeconds())
+            );
+            console.log('Data de horário de nascimento: ' +
+                        aniversario.getDate() + ' de ' + 
+                        meses[aniversario.getMonth()] + ' de ' +
+                        aniversario.getFullYear() + ' às ' + 
+                        setDoisDigitos(aniversario.getHours()) + ':' +
+                        setDoisDigitos(aniversario.getMinutes()) + ':' +
+                        setDoisDigitos(aniversario.getSeconds())
+            );
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+</html>
