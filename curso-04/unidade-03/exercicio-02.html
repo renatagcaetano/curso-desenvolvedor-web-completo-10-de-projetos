@@ -22,19 +22,19 @@
 
         <script>
         	$(function() {
-                // $("nav a").css("display", "block").css("text-decoration", "none").css("color", "red");
+                // $('nav a').css('display', 'block').css('text-decoration', 'none').css('color', 'red');
 
                 /*
                     $(function() {
-                        $("nav a").css({
-                            "display": "block",
-                            "text-decoration": "none",
-                            "color": "red"
+                        $('nav a').css({
+                            'display': 'block',
+                            'text-decoration': 'none',
+                            'color': 'red'
                         });
                     });
                 */
 
-                $("nav a:first").css("text-decoration", "none").css("color", "red");
+                // $('nav a:first').css('text-decoration', 'none').css('color', 'red');
                 
                 /*
                     nav a:last
@@ -42,6 +42,8 @@
                     nav a:even
                     nav a:nth(2)
                 */
+
+                $('nav a:contains("Brasil")').css('text-decoration', 'none').css('color', 'red');
 			});
         </script>
     </body>
